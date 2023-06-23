@@ -1,0 +1,108 @@
+html {}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Nav style */
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-size: cover;
+    background-color: #50866C;
+}
+
+a#active {
+    background-color: #AF4C68;
+    color: #E8B580;
+    box-shadow: 10px 10px 0 0 #E8B580;
+    height: 70px;
+}
+
+.menu-link-main,
+.menu-link-about,
+.menu-link-mao,
+.menu-link-memes {
+    background-color: #E8B580;
+    color: #AF4C68;
+    text-align: center;
+    font-family: 'Judson', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    height: 80px;
+    transition: 1s;
+    box-shadow: 5px 5px 0 0 #AF4C68;
+}
+
+.menu-link-main#disactive:hover,
+.menu-link-about#disactive:hover,
+.menu-link-mao#disactive:hover,
+.menu-link-memes#disactive:hover {
+    background-color: #AF4C68;
+    color: #E8B580;
+    box-shadow: 10px 10px 0 0 #E8B580;
+    height: 70px;
+}
+
+
+/*Banner style*/
+
+section.banner {
+    background-image: url(/IMG/Of2w5.jpg);
+    /* background: linear-gradient(#E8B580, #AF4C68); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+h1.banner-h1 {
+    text-align: center;
+    font-family: 'Gasoek';
+    font-size: 64px;
+    color: #AF4C68;
+}
+
+h2.banner-h2 {
+    text-align: center;
+    font-family: 'IBM';
+    font-size: 45px;
+    color: #E8B580;
+}
+
+h3.banner-h3 {}
+
+
+/*Not default fonts*/
+
+
+/*Nav font*/
+
+@font-face {
+    font-family: JudsonBold;
+    src: url(/CSS/Judson-Bold.ttf);
+}
+
+
+/*Header font*/
+
+@font-face {
+    font-family: Gasoek;
+    src: url(/CSS/BagelFatOne-Regular.ttf);
+}
+
+
+/*Banner text font*/
+
+@font-face {
+    font-family: IBM;
+    src: url('/CSS/IBMPlexMono-BoldItalic.ttf');
+}
